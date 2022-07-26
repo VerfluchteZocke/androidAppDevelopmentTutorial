@@ -10,7 +10,6 @@ public class main {
         String name = scannerVariable.nextLine();
         System.out.println("Hello " + name);
         System.out.println(name + " Press 1 if we should start the game. If not, press 0.");
-        Scanner scannerVariable2 = new Scanner(System.in);
         int quit = scannerVariable.nextInt();
         //User wants to play the game
         if (quit==1) {
@@ -22,7 +21,6 @@ public class main {
             //User can guess 5 times
             for (int i = 0; i < 5; i++) {
                 System.out.println("Guess a number between 1 and 100:");
-                Scanner scannerVariable3 = new Scanner(System.in);
                 int guess = scannerVariable.nextInt();
                 if (guess == int_random) {
                     System.out.println("Congrats! Your guess was correct!");
